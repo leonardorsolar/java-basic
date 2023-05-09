@@ -42,6 +42,10 @@ Para fazer o mapeamento relacional para que tenhas o registro na tabela é neces
    @Column(name = "game_year")
   private Integer year;
 
+- Modificandoo tipo de uma coluna:
+  @Column(columnDefinition = "TEXT")
+  private String shortDescription;
+
 # Testar a classe: run
 
 vai realizar o create table:

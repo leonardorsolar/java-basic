@@ -1,3 +1,5 @@
+# aplicação Srping boot no Vscode
+
 # java-basic
 
 Uma das grandes utilização do Java é para criação de aplicações Web e APIs REST e um dos melhores frameworks para isso é o Spring-boot.
@@ -51,11 +53,21 @@ Abra o prompt de comando e acesse a pasta descompactada. (cd <caminho da pasta>)
 - Spring Boot Extension Pack
   Este pacote de extensões contém o essencial para ajudar no desenvolvimento de projetos Spring Boot, tais como: Spring Boot Initializr (criação de projetos spring-boot), Spring Boot Dashboard (Aba do vscode que provê um explorador de projetos spring-boot no seu workspace), entre outros.
 
-# reload no vscode
+  -Spring Boot dashboard
+
+  - lombok
+  - vscode-icons
+  - code runner
+
+# reload no vscode : ctrl+shift+p
 
 Após a instalação destes plugins, lembre-se de abrir a paleta de comandos e mandar um Reload Window (ctrl+shift+p => windows/linux ou cmd+shift+p => mac) e escreva Reload Window + Enter.
 apareceu no lado esquerdo inferior: java projects
 mavem
+
+# java overview : ctrl+shift+p
+
+Para criar o prokejeto no vscode
 
 # alteração no arquivo pom.xml
 
@@ -84,6 +96,64 @@ Faça apenas uma pequena alteração no arquivo pom.xml, na seção de dependên
 Com o projeto criado, vá no vscode e abra a pasta que acabamos de criar. O vscode irá tentar inicializar as extensões, e atualizar as dependências Maven suportar o projeto, então, aguarde até que o processo termine antes de continuar:
 
 atualização no menu inferior do vscode
+
+# 5 Projeto
+
+Para criar o projeto no vscode: src/main
+
+## DslistApplication:
+
+src/main/java/com/aes/dslist/DslistApplication.java
+criado a classe principal
+
+## application.properties:
+
+src/main/resources/application.properties
+inserir os dados do banco de dados
+
+## DslistApplicationTests.java
+
+src/test/java/com/aes/dslist/DslistApplicationTests.java
+criado um teste
+
+## pom.xml
+
+com arquivo aberto é possível adiconar novas dependências
+adicionar do start spring io:
+clique com o botão direito no arquivo pom.xml em add starters
+
+## target
+
+local que será gerado os arquivos de build arquivo jar
+
+# Inicializar o projeto: incializar o servidor
+
+clique em run na barra supeior
+clique em run no codigo
+
+Tomcat initialized with port(s): 8080 (http)
+
+# Criação da sua primeira classe
+
+src/main/java/com/aes/dslist/controller.java
+
+@Rest - clique em control espaço para o intelicence
+public class HelloController {
+
+podemos agora criar métodos para get, post delete...
+
+GetMapping - clique em control espaço para o intelicence
+
+dev-se retornar no DslistApplication e executar: run
+
+# Visualização no browser:
+
+vá até o browser:
+http://localhost:8080/
+
+fontes:
+
+https://www.youtube.com/watch?v=dkmlOi_MNb4
 
 https://code.visualstudio.com/docs/java/java-spring-boot
 

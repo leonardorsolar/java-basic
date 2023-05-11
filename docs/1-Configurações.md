@@ -30,3 +30,7 @@ spring.h2.console.path=/h2-console
 
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
+
+# Instalação do Lombok
+
+Para adicionar o Lombok em um projeto com o Maven é bem simples, basta que adicionemos a dependência do Lombok na lista de dependências do projeto no arquivo pom.xml
